@@ -1,0 +1,227 @@
+
+
+	<!-- navbar -->
+	<div id="navhost"  class="inavbar" style="  z-index: 1;  border-radius: 25px;" >
+
+
+
+		
+		<div class="container" style="width:90%;">
+			<div class="panel-control-right" >
+				<a href="?#" data-activates="slide-out-right" class="sidenav-control-right"><i class="fa fa-bars"></i></a>
+			</div>
+			
+			<div class="ilogo">
+				<a   style=" width:40px ; font-weight: bold; font-size: medium; color: rgb(42, 220, 19); background-size: 100%;background-image: url(img/1tv-logo.png);" href="?#" onclick="PlayerStateChange(this)">  <i class="fa fa-play-circle"></i></a>
+			</div>
+				
+			<ul class="side-nav-panel ">
+				<li class="red"><a id="red" accesskey="1" class="red listmen" type="aa" tabindex="3"  onclick="xsortmenu(this,this.type)"  href="#" name="entertainenment, music, movie, comedy, fashion, travels" >Show</a></li>
+				<li class="green" ><a id="green" accesskey="2" class="green  listmen" type="a" tabindex="4"  href="#" name="1tv" onclick="xsortmenu(this,this.type)">(1TV)</a></li>
+				<li class="yellow" ><a id="yellow" accesskey="405" class="yellow listmen" type="a" tabindex="5" href="#" name="family" onclick="xsortmenu(this,this.type)">Family</a></li>
+				<li class="blue" ><a id="blue" accesskey="406" class="blue listmen" tabindex="6"  type="a" href="#" name="news" onclick="xsortmenu(this,this.type)">News</a></li>
+				<select name="ctype" onchange="xsortmenu(this,this.type)" id="ctype"  class="facontrol"  style="margin-top: 3px; margin-left: 10px; background-color:brown ; border-radius: 10px;  padding: 12px , 20px;
+                margin: 20px , 20px; font: 1em sans-serif; font-size:16px ; gap: 10px,10px; width:150px; height: 55px; padding: 10px,10px;display: inline-block; ; float: left"  >
+                  <option value="">All Channels</option></select>
+				
+				  
+			</ul>
+		</div>
+		
+<div  class="hmenu" >
+		<div id="dynamicmenu" sytle=" " class="cmenu" > 
+		
+		</div></div>
+	</div>
+
+	
+		</div>
+		
+	</div>
+	<!-- end navbar -->
+
+	
+
+
+	<!-- start of media control -->
+	<div id="mxcontrol" class="iplaycontrol">
+			
+		<ul class="icplay">
+			<li style="display: inline-block; float: left; margin-left: 30px;" >
+				<a class="icplay" onclick="PlayerStateChange(this)" href="#mediacontrol#play|pause"><i  class="fa fa-pause" aria-hidden="true"></i> / <i  class="fa fa-play" aria-hidden="true"></i>	</a>
+			</li>
+			<li style="display: inline-block; float: left; margin-left: 30px;">
+				<a class="icplay" onclick="player.mute()" href="#mediacontrol#Volume-Mute"><i class="fas fa-volume-mute"></i></a>
+			</li>
+			<li style="display: inline-block; float: left; margin-left: 30px;">
+				<a class="icplay" onclick="player.unMute()" href="#mediacontrol#Volume-UnMute"> <i class="fas fa-volume-off"></i></a>
+			</li>
+			<li style="display: inline-block; float: left; margin-left: 30px;">
+				<a class="icplay" onclick="getactiveinfo()" href="#mediacontrol#moreInfo"> <i class="fas fa-file"></i></a>
+		
+			</li>
+			<p id="info"> Help</p>
+			</ul>
+			</div>
+			<!-- end of media control -->
+
+
+
+		<!-- cinfo -->
+	
+		<div class="focus-cid" >
+			<div class="cinfo-thumnail">
+				<img src="https://i.imgur.com/KykRUCV.jpeg" class="channellogo">
+			</div>
+			<h2 class="channel-name"> OneTV Home </h2>
+	  <p class="showcid" >  @onetvhome</p>
+	  
+			<p class="about">UI/UX Designer <br> Front End Developer</p>
+		
+			<div class="icons">
+				<i class="fa-brands fa-linkedin"></i>
+				<i class="fa-brands fa-github"></i>
+				<i class="fa-brands fa-youtube"></i>
+				<i class="fa-brands fa-twitter"></i>
+			</div>
+		</div>
+
+		<!-- end cinfo -->
+
+	<!-- panel control right -->
+	<div class="panel-control-right">
+		<ul id="slide-out-right" class="side-nav collapsible"  data-collapsible="accordion">
+			<li>
+				<div class="photos">
+					<img src="img/1tv-logo.png" alt="1Network">
+					<h3>OneTV > Play</h3>
+				</div>
+			</li>
+			<li class="top-list">
+				<a href="#"><i class="fa fa-home"></i>Home</a>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-indent"></i>Show<span><i class="fa fa-chevron-right"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+						<li><a href="categories.html">Sport</a></li>
+						<li><a href="categories.html">Food</a></li>
+						<li><a href="categories.html">Gaming</a></li>
+						<li><a href="categories.html">Funny</a></li>
+						<li><a href="categories.html">Lifestyle</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-indent"></i>1TV<span><i class="fa fa-chevron-right"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+						<li><a href="categories.html">Sport</a></li>
+						<li><a href="categories.html">Food</a></li>
+						<li><a href="categories.html">Gaming</a></li>
+						<li><a href="categories.html">Funny</a></li>
+						<li><a href="categories.html">Lifestyle</a></li>
+					</ul>
+				</div>
+			</li><li>
+				<div class="collapsible-header"><i class="fa fa-indent"></i>Family<span><i class="fa fa-chevron-right"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+						<li><a href="categories.html">Sport</a></li>
+						<li><a href="categories.html">Food</a></li>
+						<li><a href="categories.html">Gaming</a></li>
+						<li><a href="categories.html">Funny</a></li>
+						<li><a href="categories.html">Lifestyle</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-indent"></i>News<span><i class="fa fa-chevron-right"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+						<li><a href="categories.html">Sport</a></li>
+						<li><a href="categories.html">Food</a></li>
+						<li><a href="categories.html">Gaming</a></li>
+						<li><a href="categories.html">Funny</a></li>
+						<li><a href="categories.html">Lifestyle</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="video-single.html"><i class="fa fa-play"></i>Video Single</a>
+			</li>
+			<li>
+				<a href="channels.html"><i class="fa fa-user"></i>Channels</a>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="fa fa-rss"></i>Blog <span><i class="fa fa-chevron-right"></i></span></div>
+				<div class="collapsible-body">
+					<ul class="side-nav-panel">
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="blog-single.html">Blog Single</a></li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="faq.html"><i class="fa fa-question-circle"></i>Faq</a>
+			</li>
+			<li>
+				<a href="404.html"><i class="fa fa-times-circle-o"></i>404 Page</a>
+			</li>
+			<li>
+				<a href="contact.html"><i class="fa fa-envelope"></i>Contact Us</a>
+			</li>
+			<li>
+				<a href="login.html"><i class="fa fa-sign-in"></i>Login</a>
+			</li>
+			<li>
+				<a href="register.html"><i class="fa fa-user-plus"></i>Register</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end panel control right -->
+	
+	<!-- video single-->
+	</div>
+</div>
+	
+
+	<img  id="channelLogo" src="https://1tv.ng/images/id/1tv-praise.png"  height="100" width="200"  class="logo" style=" z-index: 10;"/></a>
+	<iframe id="ticker" class="ticker" src="https://afreeca.1tv.ng/ticker.html" width="100%" height="30" frameborder="0" scroll=no style="bottom:0px; z-index: 1;"></iframe>
+	<select  id="iframe_url" hidden ></select>
+  <input id="" type="text"  hidden/>
+  <input id="" type="text"  hidden/> 
+  <input type="text" id="savechannel" style=" visibility: hidden;"/>
+
+ 
+  
+  <div id="videoScreen"  onmouseover="yshowMenu()"  style=" z-index: 0  ;position: absolute; top: 5px; left: 5px ; width: 90%; height: 90%; pointer-events: none; ;"  ></div>
+  
+  <div id="player" onmouseover="yshowMenu()"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;z-index: -1; " hidden > </div>
+	   
+	<iframe id="player2" src="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; align-items: center; margin: auto; display: none; "  hidden> </iframe>
+	
+
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+	
+		</script>
+
+</div>
+		
+	<!-- end video single -->
+	
+	<!-- script -->
+	<script src="src/js/jquery.min.js"></script>
+	<script src="src/js/materialize.min.js"></script>
+	<script src="src/js/slick.min.js"></script>
+	<script src="src/js/custom.js"></script>

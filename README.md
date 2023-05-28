@@ -1,2 +1,2 @@
-# iplay
-an Online TV Playout
+# PWA Template Project
+A simple template project for PWAs with a service worker and caching.
